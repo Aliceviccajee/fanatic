@@ -1,4 +1,3 @@
-
 <div class="hero">
   <div class="section"> </div>
     <?php if( get_field('subheading') ): ?>
