@@ -1,0 +1,50 @@
+// Avenir
+$regular: Helvetica, Arial, sans-serif;
+$bold: Helvetica, Arial, sans-serif;
+
+// Weights
+$normal: normal;
+
+// Colours
+$white: #fff;
+$black: #000;
+$dark_grey: #454545;
+$mid_grey: #E6E6E6;
+$light_grey: #A4A598;
+$dark_purple: #291B64;
+$light_purple: #604BD8;
+
+$gradient: linear-gradient(0deg, rgba(52,44,103,1) 0%, rgba(96,75,216,1) 100%);
+
+// Breakpoints
+$breakpoint-mobile: 400px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 900px;
+$breakpoint-desktop: 1200px;
+
+// Padding
+$padding: 80px;
+$padding-half: 40px;
+$padding-quarter: 20px;
+// General
+
+::selection {
+  color: $black;
+  background: $white !important;
+  text-shadow: none !important;
+}
+    
+::-moz-selection {
+  color: $black;
+  background: $white;
+  text-shadow: none !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto; 
+}
+
+body {
+  font-family: $hebo;
+}
