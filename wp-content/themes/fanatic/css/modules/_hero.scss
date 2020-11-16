@@ -5,10 +5,19 @@
         background: $gradient;
         .hero-text {
             color: $white;
+            padding: 10em 5em;
+        }
+        .headings {
+            padding-bottom: 2em;
         }
         .sub-heading {
             font-size: 22px;
             color: $lime;
+            padding-bottom: 1em;
+        }
+        p {
+            font-size: 22px;
+            padding: 1em 0;
         }
         h2 {
             font-size: 50px;
@@ -16,9 +25,13 @@
         .hero-cta {
             color: $white;
             text-decoration: none;
+            border-radius: 40px;
+            padding: 10px 40px;
+            border: 1px solid $white;
+            margin-top: 1em;
         }
     }
     .hero-right {
-
+        
     }
 }
