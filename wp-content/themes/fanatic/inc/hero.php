@@ -21,7 +21,7 @@
       </div>
     </div>
   </div>
-  
-  <div class="hero-right slider">
-  <?php echo do_shortcode('[metaslider id="49"]'); ?>
+  <div class="hero-right">
+    <?php echo do_shortcode('[metaslider id="49"]'); ?>
+  </div>
 </div>

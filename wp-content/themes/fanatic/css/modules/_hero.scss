@@ -31,7 +31,21 @@
             margin-top: 1em;
         }
     }
-    .hero-right {
-        
+
+    .metaslider {
+        img {
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+
+    .rslides_arrows {
+        display: none;
+    }
+
+    .metaslider.ms-theme-jenga ul.rslides_tabs li a {
+        border: 2px solid $lime;
+        background: transparent;
+        margin-top: 10px;
     }
 }
