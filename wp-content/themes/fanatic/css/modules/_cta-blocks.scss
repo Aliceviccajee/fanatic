@@ -1,0 +1,64 @@
+.cta-blocks {
+  padding: 4em;
+  display: grid;
+  .cta-image {
+    display: flex;
+    justify-content: center;
+    
+  }
+  img {
+    object-fit: cover;
+    height: 100%;
+    border-radius: 22px;
+  } 
+  .cta-info {
+    padding: 8em 4rem;
+    h2 {
+      padding-bottom: 20px;
+      font-size: 35px;
+      color: $dark_purple;
+    }
+    h4 {
+      color: $light_purple;
+      padding-bottom: 20px;
+      font-size: 22px;
+    }
+    p {
+      padding-bottom: 20px;
+      color: $light_grey;
+      font-weight: 100;
+    }
+  }
+  .buttons {
+    padding-top: 1em;
+    .button-light {
+      text-align: center;
+      text-decoration: none;
+      border-radius: 40px;
+      padding: 10px 40px;
+      border: 1px solid $light_purple;
+      margin-top: 1em;
+    }
+    .button-dark {
+      margin-right: 1em;
+      color: $white;
+      text-align: center;
+      background: $gradient;
+      text-decoration: none;
+      border-radius: 40px;
+      padding: 10px 40px;
+      border: 1px solid $light_purple;
+      margin-top: 1em;
+    }
+  }
+}
+.cta-blocks:nth-child(even) {
+  grid-template-columns: 60% 40%;
+  .cta-info {
+      order: 2;
+    }
+  }
+  .cta-blocks:nth-child(odd) {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}

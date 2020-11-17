@@ -9,6 +9,7 @@ $normal: normal;
 $white: #fff;
 $black: #000;
 $dark_grey: #454545;
+$light_grey: #626262;
 $mid_grey: #E6E6E6;
 $light_grey: #A4A598;
 $dark_purple: #291B64;
@@ -16,6 +17,8 @@ $light_purple: #604BD8;
 $lime: #CFFF4D;
 
 $gradient: linear-gradient(0deg, rgba(52,44,103,1) 0%, rgba(96,75,216,1) 100%);
+$box-shaddow:
+0px 0px 11px 3px rgba(97,97,97,0.24);
 
 // Breakpoints
 $breakpoint-mobile: 400px;
@@ -49,4 +52,11 @@ img {
 
 body {
   font-family: $hebo;
+  a {
+    text-decoration: none;
+  }
+  p {
+    line-height: 25px;
+  }
 }
+

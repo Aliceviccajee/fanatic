@@ -16,7 +16,8 @@ if(!empty($thecontent)) { ?>
 <?php } ?>
 
 <?php get_template_part( 'inc/components' ); ?>
-<?php get_template_part( 'inc/component-cta' ); ?>
+<?php get_template_part( 'inc/component_cta' ); ?>
+<?php get_template_part( 'inc/component_card' ); ?>
 
 <?php endwhile; // end of the loop. ?>
 

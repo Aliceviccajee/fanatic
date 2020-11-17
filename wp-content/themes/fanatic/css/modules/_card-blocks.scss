@@ -1,0 +1,97 @@
+.background {
+    background: linear-gradient( $white 50%, $dark_purple 50%);
+    padding: 5em 0 6em 0;
+    position: absolute;
+  }
+  .cta-container { 
+    margin: 0 100px;
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    .card-block {
+      padding: 2em;
+      background: $white;
+      box-shadow: $box-shaddow;
+      border-radius: 20px;
+      margin: 3em 2em;
+    }
+    .card-image {
+      padding-bottom: 3em;
+      img {
+        height: 50px;
+      }
+    }
+    h2 {
+      padding-bottom: 20px;
+      font-size: 35px;
+      color: $dark_purple;
+    }
+    h4 {
+      color: $light_purple;
+      padding-bottom: 20px;
+      font-size: 22px;
+      max-width: 50%;
+    }
+    p {
+      padding-bottom: 20px;
+      color: $light_grey;
+      font-weight: 100;
+      width: 70%;
+    }
+    .buttons {
+      font-weight: 100;
+      padding-left: 20%;
+      a {
+        background: $dark_purple;
+        border-radius: 4px;
+        color: $light_grey;
+        position: absolute;
+        padding: 10px 80px 10px 0;
+        margin-top: 50px;
+        &:hover {
+          .icon {
+            width: 90px;
+            left: 40%;
+          }
+        }
+      }
+      .icon {
+        position: absolute;
+        top: 50%;
+        left: 28%;
+        transform: translate(-50%,-50%);
+        width: 80px;
+        height: 60px;
+        cursor: pointer;
+      }
+      .arrow {
+        position: absolute;
+        top: 29px;
+        width: 100%;
+        left: 100px;
+        height: 1px;
+        background-color: $lime;
+      }
+      
+      .arrow::after, .arrow::before {
+        content: '';
+        position: absolute;
+        width: 14%;
+        height: 1px;
+        right: -1px;
+        background-color: $lime;
+      }
+      
+      .arrow::after {
+        top: -4px;
+        transform: rotate(45deg);
+      }
+      
+      .arrow::before {
+        top: 4px;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
