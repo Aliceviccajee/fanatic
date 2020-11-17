@@ -1,5 +1,49 @@
 // Footer
 .footer {
-  position: absolute;
-  height: 400px;
+  padding: 4em;
+  display: grid;
+  background: $darkest_purple;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  .footer-text {
+    h4 {
+      padding-bottom: 1.3em;
+      font-size: 35px;
+      color: $light_purple;
+      span {
+        color: $lime;
+      }
+    }
+  }
+  .footer-menu {
+    color: $white;
+    ul {
+      li {
+        padding-bottom: 1.3em;
+        a {
+          font-size: 16px;
+          color: $white;
+        }
+      }
+    }
+  }
+  .email {
+    color: $lime;
+  }
+  .map {
+    color: $white;
+    p {
+      padding-bottom: 1em;
+    }
+  }
+  .social {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    ul {
+      display: inline-flex;
+      li {
+        padding: 0 1em;
+      }
+    }
+  }
 }
