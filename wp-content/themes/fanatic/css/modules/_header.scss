@@ -1,18 +1,27 @@
 header {
   padding: 2em;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
+
 .logo {
+  @media (max-width: $breakpoint-sm) {
+    padding: 10px;
+  }
   font-size: 20px;
   color: $light_purple;
 }
 .nav {
   .menu {
     display: inline-flex;
+    flex-wrap: wrap;
     li {
-      padding: 2em;
+      padding: 10px;
+      @media (min-width: $breakpoint-sm) {
+        padding: 2em;
+      }
       a {
         color: $dark_purple;
         text-decoration: none;

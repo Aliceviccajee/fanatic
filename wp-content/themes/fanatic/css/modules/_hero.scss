@@ -1,11 +1,14 @@
 .hero {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     .hero-left {
         background: $gradient;
         .hero-text {
             color: $white;
-            padding: 10em 5em;
+            padding: 3em;
+            @media (min-width: $breakpoint-sm) {
+              padding: 10em 5em;
+            }
         }
         .headings {
             padding-bottom: 2em;

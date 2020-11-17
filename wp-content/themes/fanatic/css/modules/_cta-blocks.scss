@@ -1,5 +1,8 @@
 .cta-blocks {
-  padding: 4em;
+  padding: 2em;
+  @media (min-width: $breakpoint-sm) {
+    padding: 4em;
+  }
   display: grid;
   .cta-image {
     display: flex;
@@ -12,7 +15,9 @@
     border-radius: 22px;
   } 
   .cta-info {
-    padding: 8em 4rem;
+    @media (min-width: $breakpoint-sm) {
+      padding: 8em 4rem;
+    }
     h2 {
       padding-bottom: 20px;
       font-size: 35px;
@@ -30,7 +35,8 @@
     }
   }
   .buttons {
-    padding-top: 1em;
+    padding: 1em 0;
+    display: flex;
     .button-light {
       text-align: center;
       text-decoration: none;
@@ -53,12 +59,15 @@
   }
 }
 .cta-blocks:nth-child(even) {
-  grid-template-columns: 60% 40%;
-  .cta-info {
-      order: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  @media (min-width: $breakpoint-sm) {
+    .cta-info {
+        order: 2;
+      }
     }
   }
   .cta-blocks:nth-child(odd) {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }

@@ -41,8 +41,13 @@
     align-items: flex-end;
     ul {
       display: inline-flex;
-      li {
+      justify-content: space-evenly;
+      a {
         padding: 0 1em;
+        width: 17px;
+        img {
+          height: 17px;
+        }
       }
     }
   }

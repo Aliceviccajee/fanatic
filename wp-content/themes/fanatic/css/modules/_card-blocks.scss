@@ -1,18 +1,26 @@
 .background {
     background: linear-gradient( $white 50%, $dark_purple 50%);
-    padding: 5em 0 6em 0;
+    padding: 1em;
+    @media (min-width: $breakpoint-sm) {
+      padding: 5em 0 6em 0;
+    }
   }
   .cta-container { 
-    margin: 0 100px;
+    @media (min-width: $breakpoint-sm) {
+      margin: 0 50px;
+    }
     .grid-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     .card-block {
+      margin: 1em 1em 6em 1em;
       padding: 2em;
+      @media (min-width: $breakpoint-sm) { 
+        margin: 3em 2em;
+      }
       background: $white;
       box-shadow: $box-shaddow;
       border-radius: 20px;
-      margin: 3em 2em;
     }
     .card-image {
       padding-bottom: 3em;
@@ -35,17 +43,19 @@
       padding-bottom: 20px;
       color: $light_grey;
       font-weight: 100;
-      width: 70%;
+      @media (min-width: $breakpoint-sm) { 
+        width: 70%;
+      }
     }
     .buttons {
       font-weight: 100;
-      padding-left: 20%;
+      padding-left: 5%;
       a {
         background: $dark_purple;
         border-radius: 4px;
         color: $light_grey;
         position: absolute;
-        padding: 10px 80px 10px 0;
+        padding: 18px 110px 18px 20px;
         margin-top: 50px;
         &:hover {
           .icon {
