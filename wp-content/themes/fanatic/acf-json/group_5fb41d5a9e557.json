@@ -1,11 +1,11 @@
 {
-    "key": "group_5fb16bfbee20b",
-    "title": "Hero",
+    "key": "group_5fb41d5a9e557",
+    "title": "Hero-slider",
     "fields": [
         {
-            "key": "field_5fb16c0a09126",
-            "label": "Subheading",
-            "name": "subheading",
+            "key": "field_5fb41d7022874",
+            "label": "header",
+            "name": "header",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -22,9 +22,9 @@
             "maxlength": ""
         },
         {
-            "key": "field_5fb16c1909127",
-            "label": "Heading",
-            "name": "heading",
+            "key": "field_5fb41d7b22875",
+            "label": "Sub header",
+            "name": "sub_header",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -41,7 +41,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_5fb16c2309128",
+            "key": "field_5fb41d8922876",
             "label": "Paragraph",
             "name": "paragraph",
             "type": "text",
@@ -60,9 +60,9 @@
             "maxlength": ""
         },
         {
-            "key": "field_5fb17027c13e6",
-            "label": "cta",
-            "name": "cta",
+            "key": "field_5fb41d9922877",
+            "label": "CTA Button",
+            "name": "cta_button",
             "type": "link",
             "instructions": "",
             "required": 0,
@@ -75,8 +75,8 @@
             "return_format": "array"
         },
         {
-            "key": "field_5fb41c9b638a2",
-            "label": "Slider",
+            "key": "field_5fb41dab22878",
+            "label": "Gallery",
             "name": "gallery",
             "type": "gallery",
             "instructions": "",
@@ -105,9 +105,9 @@
     "location": [
         [
             {
-                "param": "page_type",
+                "param": "page",
                 "operator": "==",
-                "value": "front_page"
+                "value": "5"
             }
         ]
     ],
@@ -119,5 +119,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1605639355
+    "modified": 1605639610
 }

@@ -36,9 +36,12 @@
     }
   }
   .social {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    padding-top: 1em;
+    @media (min-width: $breakpoint-sm) {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
     ul {
       display: inline-flex;
       justify-content: space-evenly;

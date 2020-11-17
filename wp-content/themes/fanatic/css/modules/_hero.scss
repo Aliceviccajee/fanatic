@@ -13,7 +13,7 @@
         .headings {
             padding-bottom: 2em;
         }
-        .sub-heading {
+        .sub-header {
             font-size: 22px;
             color: $lime;
             padding-bottom: 1em;
@@ -35,20 +35,38 @@
         }
     }
 
-    .metaslider {
-        img {
-            object-fit: cover;
-            height: 100%;
+    .hero-right {
+      .slider-nav {
+        .slick-list {
+          display: none;
         }
-    }
-
-    .rslides_arrows {
-        display: none;
-    }
-
-    .metaslider.ms-theme-jenga ul.rslides_tabs li a {
-        border: 2px solid $lime;
-        background: transparent;
-        margin-top: 10px;
+      }
+      .slick-dots {
+        position: absolute;
+        width: 100%;
+        padding: 0;
+        @media (min-width: $breakpoint-sm) {
+          bottom: 361px;
+          right: -500px;
+        }
+        li {
+          display: flex;
+          right: 0;
+          border: 1px solid $lime;
+          background: transparent;
+          margin-top: 20px;
+        }
+        .slick-active { 
+          background: $lime !important;
+        }
+      }
+      img {
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+        @media (min-width: $breakpoint-sm) {
+          height: 800px;
+        }
+      }
     }
 }
