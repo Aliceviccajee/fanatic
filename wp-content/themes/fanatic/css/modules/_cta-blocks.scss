@@ -44,6 +44,11 @@
       padding: 10px 40px;
       border: 1px solid $light_purple;
       margin-top: 1em;
+      &:hover {
+        margin-top: 1em;
+        background: $gradient;
+        color: $white;
+      }
     }
     .button-dark {
       margin-right: 1em;
@@ -55,6 +60,12 @@
       padding: 10px 40px;
       border: 1px solid $light_purple;
       margin-top: 1em;
+      &:hover {
+        border: 1px solid $light_purple;
+        margin-top: 1em;
+        background: transparent;
+        color: $dark_purple;
+      }
     }
   }
 }
