@@ -45,9 +45,11 @@
         position: absolute;
         width: 100%;
         padding: 0;
+        bottom: 150px;
+        right: -350px;
         @media (min-width: $breakpoint-sm) {
           bottom: 361px;
-          right: -500px;
+          right: -600px;
         }
         li {
           display: flex;
