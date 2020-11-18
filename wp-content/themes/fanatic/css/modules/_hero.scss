@@ -1,77 +1,77 @@
 .hero {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    .hero-left {
-        background: $gradient;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .hero-text {
-            color: $white;
-            padding: 4em;
-            @media (min-width: $breakpoint-sm) {
-              padding: 10em 5em;
-            }
-        }
-        .headings {
-            padding-bottom: 2em;
-        }
-        .sub-header {
-            font-size: 22px;
-            color: $lime;
-            padding-bottom: 1em;
-        }
-        p {
-            font-size: 22px;
-            padding: 1em 0;
-        }
-        h2 {
-            font-size: 50px;
-        }
-        .hero-cta {
-            color: $white;
-            text-decoration: none;
-            border-radius: 40px;
-            padding: 10px 40px;
-            border: 1px solid $white;
-            margin-top: 1em;
-        }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  .hero-left {
+    background: $gradient;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .hero-text {
+      color: $white;
+      padding: 4em;
+      @media (min-width: $breakpoint-sm) {
+        padding: 10em 5em;
+      }
+    }
+    .headings {
+      padding-bottom: 2em;
+    }
+    .sub-header {
+      font-size: 22px;
+      color: $lime;
+      padding-bottom: 1em;
+    }
+    p {
+      font-size: 22px;
+      padding: 1em 0;
+    }
+    h2 {
+      font-size: 50px;
+    }
+    .hero-cta {
+      color: $white;
+      text-decoration: none;
+      border-radius: 40px;
+      padding: 10px 40px;
+      border: 1px solid $white;
+      margin-top: 1em;
+      }
     }
 
-    .hero-right {
-      .slider-nav {
-        .slick-list {
-          display: none;
-        }
-      }
-      .slick-dots {
-        position: absolute;
-        width: 100%;
-        padding: 0;
-        bottom: 150px;
-        right: -350px;
-        @media (min-width: $breakpoint-sm) {
-          bottom: 361px;
-          right: -600px;
-        }
-        li {
-          display: flex;
-          right: 0;
-          border: 1px solid $lime;
-          background: transparent;
-          margin-top: 20px;
-        }
-        .slick-active { 
-          background: $lime !important;
-        }
-      }
-      img {
-        height: 400px;
-        width: 100%;
-        object-fit: cover;
-        @media (min-width: $breakpoint-sm) {
-          height: 800px;
-        }
+  .hero-right {
+    .slider-nav {
+      .slick-list {
+        display: none;
       }
     }
+    .slick-dots {
+      position: absolute;
+      width: 100%;
+      padding: 0;
+      bottom: 150px;
+      right: -350px;
+      @media (min-width: $breakpoint-sm) {
+        bottom: 361px;
+        right: -600px;
+      }
+      li {
+        display: flex;
+        right: 0;
+        border: 1px solid $lime;
+        background: transparent;
+        margin-top: 20px;
+      }
+      .slick-active { 
+        background: $lime !important;
+      }
+    }
+    img {
+      height: 400px;
+      width: 100%;
+      object-fit: cover;
+      @media (min-width: $breakpoint-sm) {
+        height: 800px;
+      }
+    }
+  }
 }
