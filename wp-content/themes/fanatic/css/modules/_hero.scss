@@ -3,9 +3,12 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     .hero-left {
         background: $gradient;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .hero-text {
             color: $white;
-            padding: 3em;
+            padding: 4em;
             @media (min-width: $breakpoint-sm) {
               padding: 10em 5em;
             }

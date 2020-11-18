@@ -22,6 +22,9 @@
         a {
           font-size: 16px;
           color: $white;
+          &:hover {
+            color: $light_purple;
+          }
         }
       }
     }
