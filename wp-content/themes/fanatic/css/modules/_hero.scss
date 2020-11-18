@@ -1,6 +1,9 @@
 .hero {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  // HERO LEFT
+
   .hero-left {
     background: $gradient;
     display: flex;
@@ -37,6 +40,8 @@
       margin-top: 1em;
       }
     }
+
+    // SLIDER HERO RIGHT
 
   .hero-right {
     .slider-nav {
